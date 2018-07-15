@@ -1,0 +1,43 @@
+{
+"servers": {
+    "sjc_prod": [
+                "rpsjqlkhsn001.webex.com",
+                "rpsjqlkhsn002.webex.com",
+                "rpsjqlkhsn003.webex.com",
+                "rpsjqlkhsn004.webex.com",
+                "rpsjqlkhsn005.webex.com",
+                "rpsjqlkhsn006.webex.com",
+                "rpsjqlkhsn007.webex.com",
+                "rpsjqlkhsn008.webex.com",
+                "rpsjqlkhsn009.webex.com",
+                "rpsjqlkhsn010.webex.com",
+                "rpsjqlkhsn011.webex.com",
+                "rpsjqlkhsn012.webex.com",
+                "rpsjqlkhsn013.webex.com",
+                "rpsjqlkhsn014.webex.com",
+                "rpsjqlkhsn015.webex.com"
+                
+            
+            
+            ],
+
+    "dfw_prod": [
+                "rptaqlkhsn001.webex.com",
+                "rptaqlkhsn002.webex.com",
+                "rptaqlkhsn003.webex.com",
+                "rptaqlkhsn004.webex.com",
+                "rptaqlkhsn005.webex.com",
+                "rptaqlkhsn006.webex.com",
+                "rptaqlkhsn007.webex.com",
+                "rptaqlkhsn008.webex.com",
+                "rptaqlkhsn009.webex.com",
+                "rptaqlkhsn010.webex.com",
+                "rptaqlkhsn011.webex.com",
+                "rptaqlkhsn012.webex.com",
+                "rptaqlkhsn013.webex.com",
+                "rptaqlkhsn014.webex.com",
+                "rptaqlkhsn015.webex.com"
+                ]
+
+   }
+}
