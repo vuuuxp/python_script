@@ -1,0 +1,7 @@
+{
+  "master_ip": "127.0.0.1",
+  "slave_ip": "hpqa1mql002.webex.com",
+  "master_username": "root",
+  "slave_password": "slave12345",
+  "password": "root"
+}

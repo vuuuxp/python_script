@@ -1,0 +1,24 @@
+cassandra:
+    username: cassandraa
+    password: cassandra
+    hosts: [xxx]
+    keyspace: keyspace
+    local_dc: DC
+
+cassandraProd:
+    username: username
+    password: password
+    hosts: [xxx]
+    keyspace: xxxx
+    local_dc: DC
+
+region:
+  AMER:
+    primary_dc: sjc
+    secondary_dc: dfw
+  EMEA:
+    primary_dc: lon
+    secondary_dc: ams
+  APAC:
+    primary_dc: sg
+    secondary_dc: jpn

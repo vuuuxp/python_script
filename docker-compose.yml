@@ -1,0 +1,35 @@
+version: '2'
+services:
+  mysqlmaster:
+    image: mysql:8.0.19
+    environment:
+      - "MYSQL_ROOT_PASSWORD=root"
+    ports:
+      - 3307:3306
+    volumes:
+      - ./data/mysql-master:/var/lib/mysql/
+      - ./config/mysql-master:/etc/mysql/conf.d/
+    command: --default-authentication-plugin=mysql_native_password
+  mysqlslave:
+    image: mysql:8.0.19
+    environment:
+      - "MYSQL_ROOT_PASSWORD=root"
+    volumes:
+      - ./data/mysql-slave:/var/lib/mysql/
+      - ./config/mysql-slave:/etc/mysql/conf.d/
+    ports:
+      - 3308:3306
+    command: --default-authentication-plugin=mysql_native_password
+  mysqlconfigure:
+    image: mysql:8.0.19
+    environment:
+      - "MYSQL_SLAVE_PASSWORD=root"
+      - "MYSQL_MASTER_PASSWORD=root"
+      - "MYSQL_ROOT_PASSWORD=root"
+      - "MYSQL_REPLICATION_USER=repl"
+      - "MYSQL_REPLICATION_PASSWORD=repl"
+      - "MYSQL_HEARTBEAT_USER=healthchecker"
+      - "MYSQL_HEARTBEAT_PASSWORD=healthcheckpass"
+    volumes:
+      - ./mysql_connector.sh:/tmp/mysql_connector.sh
+    command: /bin/bash -x /tmp/mysql_connector.sh
