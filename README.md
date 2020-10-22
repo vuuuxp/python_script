@@ -1,1 +1,1 @@
-Python script from past work or personal 
+Python script from past work using singleton pattern  
